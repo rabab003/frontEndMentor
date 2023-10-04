@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400&family=Caveat:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,600;0,700;0,800;1,400;1,500;1,700;1,800&family=Foldit:wght@200;400;600&family=Inter:wght@100;200;300;400;500;600;700&family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,600;0,700;1,100;1,200;1,400;1,600;1,700&family=Montserrat:wght@400;500;600;700&family=Nunito:ital,wght@0,200;0,400;0,600;0,800;1,200&family=Open+Sans:wght@300;400;700&family=Oswald:wght@300;400;600;700&family=Outfit:wght@300;400;600&family=Overpass:wght@400;700&family=Poppins:wght@300;400;500;600&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,900&family=Tilt+Prism&family=Work+Sans:ital,wght@0,200;0,300;0,500;1,100;1,300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  color: white;
+  /* text-align: center; */
+  background: hsl(216, 50%, 16%);
+  width: 320px;
+  border-raduis: 20px;
+  padding: 15px;
+  border-radius: 10px;
+}
+.box .equilibrium {
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+}
+.box .equilibrium::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: hsl(178, 100%, 50%);
+  z-index: 22;
+}
+
+.box .text .icons {
+  display: flex;
+  width: 100%;
+}
+.box .text {
+  padding-top: 17px;
+  padding-bottom: 17px;
+  width: 100%;
+  border-bottom: 0.5px solid hsl(215, 32%, 27%);
+}
+.box .text h1:hover {
+  color: hsl(178, 100%, 50%);
+}
+.box .text .par {
+  font-weight: 100;
+}
+.box .text .icons .right {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  align-items: center;
+}
+.box .text .icons .left {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  align-items: center;
+}
+.box .text .icons .left p {
+  color: hsl(178, 100%, 50%);
+}
+.box .text .icons .left .dam {
+  object-fit: cover;
+  height: 15px;
+  width: 15px;
+}
+.box .text .icons .right .dam {
+  object-fit: cover;
+  height: 15px;
+  width: 15px;
+}
+
+.box .text h1 {
+  font-size: 20px;
+}
+
+.box .text p {
+  color: hsl(215, 51%, 70%);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.box .bot {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  gap: 14px;
+}
+.box .bot .cre {
+  color: hsl(215, 51%, 70%);
+}
+.box .bot span {
+  color: white;
+}
+.box .bot span:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.box .bot img {
+  width: 34px;
+}
